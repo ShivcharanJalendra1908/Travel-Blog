@@ -14,7 +14,7 @@ app.use("/api/user", userRouter);
 app.use("/api/blog", blogRouter);
 
 app.use("/api", (req,res,next) => {
-  res.send("Hello")
+  res.send("Hello");
 })
 
 mongoose
