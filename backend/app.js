@@ -10,8 +10,8 @@ app.use(cors());
 app.set("view engine","ejs");
 
 app.use(express.json());
-app.use("https://travel-bog.onrender.com/api/user", userRouter);
-app.use("https://travel-bog.onrender.com/api/blog", blogRouter);
+app.use("/api/user", userRouter);
+app.use("/api/blog", blogRouter);
 
 app.use("/api", (req,res,next) => {
   res.send("Hello");
