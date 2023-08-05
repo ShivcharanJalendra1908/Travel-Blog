@@ -23,6 +23,6 @@ mongoose
 )
 .then(() => app.listen("https://travel-bog.onrender.com"))
 .then(() => 
-    console.log("Connected To Database and Listening To Localhost")
+    console.log("Connected To Database")
 )
 .catch((err) => console.log(err));
