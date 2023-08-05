@@ -3,8 +3,8 @@ import { getAllUser, login, signup } from "../controllers/user-controller";
 
 const router = express.Router();
 
-router.get("/", getAllUser);
-router.post("/signup", signup);
-router.post("/login", login);
+router.get("https://travel-bog.onrender.com/", getAllUser);
+router.post("https://travel-bog.onrender.com/signup", signup);
+router.post("https://travel-bog.onrender.com/login", login);
 
 export default router;
