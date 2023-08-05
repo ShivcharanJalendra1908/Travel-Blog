@@ -35,6 +35,7 @@ const BlogDetail = () => {
       setInputs({
         title: data.blog.title,
         description: data.blog.description,
+        image: data.blog.image,
       });
     }); // eslint-disable-next-line
   }, [id]);
@@ -44,6 +45,7 @@ const BlogDetail = () => {
       .put(`https://travel-bog.onrender.com/api/blog/update/${id}`, {
         title: inputs.title,
         description: inputs.description,
+        image: inputs.imageURL,
       })
       .catch((err) => console.log(err));
 
